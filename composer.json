@@ -1,10 +1,39 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
+	"name": "edroch/klver",
+	"description": "Klver Simple CMS for laravel",
 	"keywords": ["framework", "laravel"],
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+		"twitter/bootstrap": "dev-master",
+		"zizaco/confide": "dev-master",
+		"zizaco/entrust": "dev-master",
+		"jasonlewis/basset": "dev-master",
+		"robclancy/presenter": "1.0.*",
+        "j20/php-uuid": "dev-master",
+        "bllim/datatables": "*",
+        "cssmin/cssmin": "3.0.*",
+        "mrclay/minify": "*"
 	},
+	"require-dev": {
+        "way/generators": "dev-master",
+        "mockery/mockery": "dev-master@dev",
+        "summerstreet/woodling": "0.1.*",
+        "barryvdh/laravel-ide-helper": "dev-master",
+        "leafo/lessphp": "v0.3.9",
+        "natxet/CssMin": "dev-master",
+        "lmammino/jsmin4assetic": "1.0.*"
+	},
+	"repositories": [
+	    {
+	        "type": "package",
+	        "package": {
+	            "name": "cssmin/cssmin",
+	            "version": "3.0.1",
+	            "dist": { "url": "http://cssmin.googlecode.com/files/cssmin-v3.0.1.php", "type": "file" },
+	            "autoload": { "classmap": [ "cssmin-v3.0.1.php" ] }
+	        }
+	    }
+	],
 	"autoload": {
 		"classmap": [
 			"app/commands",

@@ -21,6 +21,7 @@ composer.lock
 
 # Packages
 app/_ide_helpers.php
+node_modules
 
 # Local
 _private
